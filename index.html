@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raizen&AeonieStudio</title>   
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/2c/5b/ab/2c5bab6723ef8f80152bb4aaa4920fef.jpg">
+</head>
+<body class="home">  
+    <!-- Title -->
+    <div>
+        <h1 class="logo1">Raizen&Aeonie Studio</h1>
+    </div>
+
+    <!-- Image -->
+    <div>
+        <img src="camera.png" alt="camera" class="star">
+    </div>
+
+    <!-- Ready Button -->
+    <div>
+        <button id="ready-btn" onclick="redirectWithTransition('instructions.html')">Ready?</button>
+    </div>
+
+    <!-- JavaScript for transition -->
+    <script>
+        function redirectWithTransition(url) {
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500); // Match with transition duration
+        }
+    </script>
+</body>
+</html>

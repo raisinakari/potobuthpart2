@@ -1,0 +1,388 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body.home {
+    font-family: 'League Spartan', sans-serif;
+    background: linear-gradient(to right, #1f1c2c, #928dab); /* Deep purple gradient */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Logo Text */
+.logo1 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 3rem;
+    color: #e0d4f7; /* Light purple tone */
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Image Animation */
+.star {
+    width: 180px;
+    height: auto;
+    margin: 1rem 0;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+/* Button Styling */
+#ready-btn {
+    background-color: #6a0dad; /* Rich purple */
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1.5rem;
+    box-shadow: 0 5px 20px rgba(106, 13, 173, 0.4);
+}
+
+#ready-btn:hover {
+    background-color: #8a2be2; /* Lighter purple on hover */
+    transform: translateY(-4px);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+    .logo1 {
+        font-size: 2.2rem;
+    }
+
+    .star {
+        width: 140px;
+    }
+
+    #ready-btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
+/* Instructions Page Styling */
+body.instructions {
+    font-family: 'League Spartan', sans-serif;
+    background: linear-gradient(to left, #2b0a3d, #6d2f93); /* Purple gradient background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Logo Style */
+.logo2 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 2.8rem;
+    color: #e3c3ff;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Instruction Image */
+.instruction-img {
+    width: 160px;
+    height: auto;
+    margin: 1rem 0 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Start Button */
+#start-btn {
+    background-color: #7e3ff2;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(126, 63, 242, 0.3);
+}
+
+#start-btn:hover {
+    background-color: #9b59ff;
+    transform: translateY(-3px);
+}
+
+/* Footer Text */
+.footer-text {
+    font-family: 'Kreon', serif;
+    font-size: 1rem;
+    margin-top: 3rem;
+    color: #d9c8f7;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .logo2 {
+        font-size: 2rem;
+    }
+
+    .instruction-img {
+        width: 120px;
+    }
+
+    #start-btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+}
+/* Photobooth Page Styling */
+body.photobooth {
+    font-family: 'League Spartan', sans-serif;
+    background: linear-gradient(to right, #3a0ca3, #7209b7);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Header */
+.logo2 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 2.8rem;
+    color: #f3d9ff;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Camera Container */
+.camera-container {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(114, 9, 183, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Countdown Text */
+#countdown {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e0c3ff;
+    margin-bottom: 1rem;
+}
+
+/* Video Stream */
+#video {
+    width: 320px;
+    max-width: 90vw;
+    height: auto;
+    border: 4px solid #a64bf4;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Counter */
+#counter {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #f5e1ff;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer-text {
+    font-family: 'Kreon', serif;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    color: #dec9f9;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .logo2 {
+        font-size: 2rem;
+    }
+
+    #countdown {
+        font-size: 1.2rem;
+    }
+
+    #video {
+        width: 260px;
+    }
+
+    #counter {
+        font-size: 1rem;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+}
+/* Download Page Styling */
+body.download {
+    font-family: 'League Spartan', sans-serif;
+    background: linear-gradient(to right, #5a189a, #9d4edd); /* Purple gradient */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Header */
+.logo2 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 2.8rem;
+    color: #f3d9ff;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Layout */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Canvas */
+#finalCanvas {
+    width: 320px;
+    height: auto;
+    border: 5px solid #d0a2f7;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    background-color: #1e0033;
+}
+
+/* Right Panel */
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    gap: 1.2rem;
+}
+
+/* Color Selection */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 1rem;
+}
+
+.color-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.color-btn:hover,
+.color-btn.selected {
+    border: 3px solid #ffffff;
+}
+
+/* Button Group */
+.button-last {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button-last button {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 20px rgba(106, 13, 173, 0.4);
+}
+
+.button-last button:hover {
+    background-color: #9d4edd;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer-text {
+    font-family: 'Kreon', serif;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    color: #dec9f9;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .color-grid {
+        grid-template-columns: repeat(3, 70px);
+    }
+
+    .color-btn {
+        width: 70px;
+        height: 70px;
+    }
+}
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
